@@ -126,6 +126,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllCollections.cs" />
     <Compile Include="ConnectMongoDB.cs" />
     <Compile Include="FiliationsCollection.cs" />
     <Compile Include="HyperSpaceRoutesCollection.cs" />
@@ -138,12 +139,6 @@
     <Compile Include="Schemas\PlanetRoute.cs" />
     <Compile Include="Schemas\PlanetSituation.cs" />
     <Compile Include="Schemas\Regions.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OnBoardComputer\OnBoardComputer.csproj">
-      <Project>{6f814fbc-cd9b-4527-a6d9-6d5fba423309}</Project>
-      <Name>OnBoardComputer</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />

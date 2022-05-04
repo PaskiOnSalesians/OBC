@@ -132,3 +132,6 @@ D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\bin\Debug\System.Security
 D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\bin\Debug\System.Security.Principal.Windows.xml
 D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\bin\Debug\System.Text.Encoding.CodePages.xml
 D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\obj\Debug\OnBoardComputer.csproj.CopyComplete
+D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\bin\Debug\AccessMongoDB.dll
+D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\bin\Debug\AccessMongoDB.pdb
+D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\bin\Debug\AccessMongoDB.dll.config

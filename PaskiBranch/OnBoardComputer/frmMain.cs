@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using AccessMongoDB;
+
 namespace OnBoardComputer
 {
     public partial class frmMain : Form
     {
+        AllCollections allCollections = new AllCollections();
+
         public frmMain()
         {
             InitializeComponent();
@@ -19,7 +23,19 @@ namespace OnBoardComputer
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            
+            loadCollections();
+        }
+
+        private void loadCollections()
+        {
+            List<string> collectionsCombo;
+
+            collectionsCombo = allCollections.GetCollections();
+
+            foreach (string item in collectionsCombo)
+            {
+                cmbCollections.Items.Add(item);
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
