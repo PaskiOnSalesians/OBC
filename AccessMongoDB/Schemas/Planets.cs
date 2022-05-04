@@ -14,7 +14,7 @@ namespace AccessMongoDB.Schemas
     public class Planets
     {
         [BsonId]
-        public static ObjectId Id { get; set; }
+        public ObjectId Id { get; set; }
 
         [BsonElement("name")]
 

@@ -43,3 +43,7 @@ C:\Users\Marc\source\repos\OnBoardComputer\AccessMongoDB\bin\Debug\System.Text.E
 C:\Users\Marc\source\repos\OnBoardComputer\AccessMongoDB\obj\Debug\AccessMongoDB.csproj.CopyComplete
 C:\Users\Marc\source\repos\OnBoardComputer\AccessMongoDB\obj\Debug\AccessMongoDB.dll
 C:\Users\Marc\source\repos\OnBoardComputer\AccessMongoDB\obj\Debug\AccessMongoDB.pdb
+C:\Users\Marc\Documents\GitHub\OnBoardComputer\AccessMongoDB\obj\Debug\AccessMongoDB.csproj.AssemblyReference.cache
+C:\Users\Marc\Documents\GitHub\OnBoardComputer\AccessMongoDB\obj\Debug\AccessMongoDB.csproj.CoreCompileInputs.cache
+C:\Users\Marc\Documents\GitHub\OnBoardComputer\AccessMongoDB\obj\Debug\AccessMongoDB.dll
+C:\Users\Marc\Documents\GitHub\OnBoardComputer\AccessMongoDB\obj\Debug\AccessMongoDB.pdb

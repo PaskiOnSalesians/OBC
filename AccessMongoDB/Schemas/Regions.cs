@@ -11,7 +11,7 @@ namespace AccessMongoDB.Schemas
     public class Regions
     {
         [BsonId]
-        public static ObjectId Id { get; set; }
+        public ObjectId Id { get; set; }
 
         [BsonElement("nameRegion")]
 

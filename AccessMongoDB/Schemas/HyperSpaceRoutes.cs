@@ -11,7 +11,7 @@ namespace AccessMongoDB.Schemas
     public class HyperSpaceRoutes
     {
         [BsonId]
-        public static ObjectId Id { get; set; }
+        public ObjectId Id { get; set; }
 
         [BsonElement("type")]
 
