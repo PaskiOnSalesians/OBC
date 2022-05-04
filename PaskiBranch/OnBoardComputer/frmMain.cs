@@ -35,5 +35,12 @@ namespace OnBoardComputer
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void lnkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.lnkGithub.LinkVisited = true;
+
+            System.Diagnostics.Process.Start("https://github.com/DevPaski/OnBoardComputer");
+        }
     }
 }

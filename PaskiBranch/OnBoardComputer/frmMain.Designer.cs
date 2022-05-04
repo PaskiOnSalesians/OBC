@@ -61,6 +61,7 @@ namespace OnBoardComputer
             this.btnMinimize = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabRegions = new System.Windows.Forms.TabPage();
+            this.lnkGithub = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -100,6 +101,7 @@ namespace OnBoardComputer
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lnkGithub);
             this.panel2.Controls.Add(this.panel13);
             this.panel2.Controls.Add(this.panel14);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -423,6 +425,21 @@ namespace OnBoardComputer
             this.tabRegions.Size = new System.Drawing.Size(610, 505);
             this.tabRegions.TabIndex = 3;
             // 
+            // lnkGithub
+            // 
+            this.lnkGithub.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lnkGithub.AutoSize = true;
+            this.lnkGithub.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkGithub.LinkColor = System.Drawing.Color.White;
+            this.lnkGithub.Location = new System.Drawing.Point(992, 56);
+            this.lnkGithub.Name = "lnkGithub";
+            this.lnkGithub.Size = new System.Drawing.Size(185, 17);
+            this.lnkGithub.TabIndex = 4;
+            this.lnkGithub.TabStop = true;
+            this.lnkGithub.Text = "NoName Developers Github";
+            this.lnkGithub.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lnkGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithub_LinkClicked);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -443,6 +460,7 @@ namespace OnBoardComputer
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -494,6 +512,7 @@ namespace OnBoardComputer
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabRegions;
+        private System.Windows.Forms.LinkLabel lnkGithub;
     }
 }
 
