@@ -9,12 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using AccessMongoDB;
+using AccessMongoDB.Schemas;
+using MongoDB.Bson;
 
 namespace OnBoardComputer
 {
     public partial class frmMain : Form
     {
         AllCollections allCollections = new AllCollections();
+
+        //List<Planets> planetas;
+        //List<HyperSpaceRoutes> rutas;
+        //List<Regions> regions;
+        //List<Filiations> filiations;
+
 
         public frmMain()
         {
@@ -23,10 +31,10 @@ namespace OnBoardComputer
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            loadCollections();
+            LoadCollections();
         }
 
-        private void loadCollections()
+        private void LoadCollections()
         {
             List<string> collectionsCombo;
 
@@ -34,7 +42,7 @@ namespace OnBoardComputer
 
             foreach (string item in collectionsCombo)
             {
-                cmbCollections.Items.Add(item);
+                cmbCollections.Items.Add(item.ToUpper());
             }
         }
 
@@ -57,6 +65,49 @@ namespace OnBoardComputer
             this.lnkGithub.LinkVisited = true;
 
             System.Diagnostics.Process.Start("https://github.com/DevPaski/OnBoardComputer");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            LoadAllData(cmbCollections.SelectedIndex.ToString());
+        }
+
+        private void LoadDataById(ObjectId id)
+        {
+            
+        }
+
+        // Intentar hacerlo con una lista con GetType
+        private void LoadAllData(string collectionName)
+        {
+            Type listType;
+
+            switch (collectionName)
+            {
+                case "PLANETS":
+                    listType = PlanetsCollection.SelectAll().GetType();
+                    //planetas = PlanetsCollection.SelectAll();
+                    break;
+                case "HYPERSPACEROUTES":
+                    listType = HyperSpaceRoutesCollection.SelectAll().GetType();
+                    //rutas = HyperSpaceRoutesCollection.SelectAll();
+                    break;
+                case "REGIONS":
+                    listType = RegionsCollection.SelectAll().GetType();
+                    //regions = RegionsCollection.SelectAll();
+                    break;
+                case "FILIATIONS":
+                    listType = FiliationsCollection.SelectAll().GetType();
+                    //filiations = FiliationsCollection.SelectAll();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void treeViewData_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+
         }
     }
 }
