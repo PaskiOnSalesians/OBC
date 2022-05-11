@@ -182,3 +182,15 @@ C:\Users\Marc\Documents\GitHub\OnBoardComputer\MarcBranch\OnBoardComputer\obj\De
 C:\Users\Marc\Documents\GitHub\OnBoardComputer\MarcBranch\OnBoardComputer\obj\Debug\OnBoardComputer.csproj.CoreCompileInputs.cache
 C:\Users\Marc\Documents\GitHub\OnBoardComputer\MarcBranch\OnBoardComputer\obj\Debug\OnBoardComputer.exe
 C:\Users\Marc\Documents\GitHub\OnBoardComputer\MarcBranch\OnBoardComputer\obj\Debug\OnBoardComputer.pdb
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\libzstd.dll
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\snappy32.dll
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\snappy64.dll
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\libsnappy64.so
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\libzstd.so
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\libsnappy64.dylib
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\libzstd.dylib
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\mongocrypt.dll
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\OnBoardComputer.exe.config
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\OnBoardComputer.exe
+D:\ForkGit\OnBoardComputer\PaskiBranch\dll\OnBoardComputer.pdb
+D:\ForkGit\OnBoardComputer\PaskiBranch\OnBoardComputer\obj\Debug\OnBoardComputer.Auxiliar.resources

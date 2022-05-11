@@ -127,7 +127,7 @@ namespace OnBoardComputer
             lblParsecs.Text = planet.Situation.Parsecs;
             lblSector.Text = planet.Sector;
 
-            pbPlanet.ImageLocation = @"Planetes\" + planet.Nombre + ".jpg";
+            pbPlanet.ImageLocation = Application.StartupPath +  "\\..\\Resources\\Planetes\\" + planet.Nombre + ".png";
 
             listBoxRoutes.Items.Clear();
             foreach (string item in planet.HyperSpaceRoute.Route)
@@ -151,7 +151,7 @@ namespace OnBoardComputer
             lblRegionName.Text = region.NameRegion;
             lblRegionDesc.Text = region.DescriptionRegion;
 
-            pbRegion.ImageLocation = @"Planetes\" + region.MapRegion + ".jpg";
+            pbRegion.ImageLocation = Application.StartupPath + "\\..\\Resources\\Regions\\" + region.MapRegion + ".jpg";
         }
 
         private void LoadFiliations()
