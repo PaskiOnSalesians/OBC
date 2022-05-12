@@ -85,53 +85,29 @@ namespace OnBoardComputer
             this.panel9 = new System.Windows.Forms.Panel();
             this.treeViewData = new System.Windows.Forms.TreeView();
             this.lblCollection = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.panel39 = new System.Windows.Forms.Panel();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.listBoxRoutes = new System.Windows.Forms.ListBox();
-            this.lblHyperSpace = new System.Windows.Forms.Label();
-            this.lblFiliation = new System.Windows.Forms.Label();
-            this.lblSpecie = new System.Windows.Forms.Label();
-            this.lblPlanet = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pnlTabPlanet = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblPosition = new System.Windows.Forms.Label();
-            this.lblGeneralInfo = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblPlanet = new System.Windows.Forms.Label();
+            this.lblSpecie = new System.Windows.Forms.Label();
+            this.lblFiliation = new System.Windows.Forms.Label();
+            this.panGeneralInfo = new System.Windows.Forms.Panel();
             this.pbPlanet = new System.Windows.Forms.PictureBox();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.lblSector = new System.Windows.Forms.Label();
-            this.lblParsecs = new System.Windows.Forms.Label();
-            this.lblLat = new System.Windows.Forms.Label();
-            this.lblLong = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblGeneralInfo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblLong = new System.Windows.Forms.Label();
+            this.lblLat = new System.Windows.Forms.Label();
+            this.lblParsecs = new System.Windows.Forms.Label();
+            this.lblSector = new System.Windows.Forms.Label();
+            this.panPosition = new System.Windows.Forms.Panel();
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.listBoxRoutes = new System.Windows.Forms.ListBox();
+            this.panHyperSpace = new System.Windows.Forms.Panel();
+            this.lblHyperSpace = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -156,19 +132,11 @@ namespace OnBoardComputer
             this.tableLayoutPanel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel38.SuspendLayout();
-            this.panel43.SuspendLayout();
-            this.panel44.SuspendLayout();
-            this.panel45.SuspendLayout();
+            this.pnlTabPlanet.SuspendLayout();
+            this.panGeneralInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlanet)).BeginInit();
-            this.panel46.SuspendLayout();
+            this.panPosition.SuspendLayout();
+            this.panHyperSpace.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblItem
@@ -468,11 +436,7 @@ namespace OnBoardComputer
             // tabPlanets
             // 
             this.tabPlanets.BackColor = System.Drawing.Color.Black;
-            this.tabPlanets.Controls.Add(this.panel23);
-            this.tabPlanets.Controls.Add(this.panel22);
-            this.tabPlanets.Controls.Add(this.panel21);
-            this.tabPlanets.Controls.Add(this.panel20);
-            this.tabPlanets.Controls.Add(this.panel19);
+            this.tabPlanets.Controls.Add(this.pnlTabPlanet);
             this.tabPlanets.Location = new System.Drawing.Point(4, 5);
             this.tabPlanets.Margin = new System.Windows.Forms.Padding(2);
             this.tabPlanets.Name = "tabPlanets";
@@ -838,498 +802,283 @@ namespace OnBoardComputer
             this.lblCollection.TabIndex = 22;
             this.lblCollection.Text = "GENERAL INFO";
             // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.panel26);
-            this.panel19.Controls.Add(this.panel25);
-            this.panel19.Controls.Add(this.panel24);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel19.Location = new System.Drawing.Point(2, 2);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(662, 209);
-            this.panel19.TabIndex = 0;
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(2, 211);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(662, 5);
-            this.panel20.TabIndex = 1;
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.panel44);
-            this.panel21.Controls.Add(this.panel30);
-            this.panel21.Controls.Add(this.panel29);
-            this.panel21.Controls.Add(this.panel28);
-            this.panel21.Controls.Add(this.panel27);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel21.Location = new System.Drawing.Point(2, 216);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(285, 327);
-            this.panel21.TabIndex = 2;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.White;
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel22.Location = new System.Drawing.Point(287, 216);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(5, 327);
-            this.panel22.TabIndex = 3;
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.panel43);
-            this.panel23.Controls.Add(this.panel39);
-            this.panel23.Controls.Add(this.panel40);
-            this.panel23.Controls.Add(this.panel41);
-            this.panel23.Controls.Add(this.panel42);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel23.Location = new System.Drawing.Point(292, 216);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(372, 327);
-            this.panel23.TabIndex = 4;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.panel45);
-            this.panel24.Controls.Add(this.panel31);
-            this.panel24.Controls.Add(this.panel32);
-            this.panel24.Controls.Add(this.panel33);
-            this.panel24.Controls.Add(this.panel34);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel24.Location = new System.Drawing.Point(0, 0);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(309, 209);
-            this.panel24.TabIndex = 0;
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.White;
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel25.Location = new System.Drawing.Point(309, 0);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(5, 209);
-            this.panel25.TabIndex = 1;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.panel46);
-            this.panel26.Controls.Add(this.panel35);
-            this.panel26.Controls.Add(this.panel36);
-            this.panel26.Controls.Add(this.panel37);
-            this.panel26.Controls.Add(this.panel38);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel26.Location = new System.Drawing.Point(314, 0);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(322, 209);
-            this.panel26.TabIndex = 2;
-            // 
-            // panel27
-            // 
-            this.panel27.Controls.Add(this.lblHyperSpace);
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel27.Location = new System.Drawing.Point(0, 0);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(285, 50);
-            this.panel27.TabIndex = 0;
-            // 
-            // panel28
-            // 
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel28.Location = new System.Drawing.Point(0, 277);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(285, 50);
-            this.panel28.TabIndex = 1;
-            // 
-            // panel29
-            // 
-            this.panel29.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel29.Location = new System.Drawing.Point(0, 50);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(50, 227);
-            this.panel29.TabIndex = 2;
-            // 
-            // panel30
-            // 
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel30.Location = new System.Drawing.Point(235, 50);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(50, 227);
-            this.panel30.TabIndex = 3;
-            // 
-            // panel31
-            // 
-            this.panel31.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel31.Location = new System.Drawing.Point(259, 50);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(50, 109);
-            this.panel31.TabIndex = 7;
-            // 
-            // panel32
-            // 
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel32.Location = new System.Drawing.Point(0, 50);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(50, 109);
-            this.panel32.TabIndex = 6;
-            // 
-            // panel33
-            // 
-            this.panel33.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel33.Location = new System.Drawing.Point(0, 159);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(309, 50);
-            this.panel33.TabIndex = 5;
-            // 
-            // panel34
-            // 
-            this.panel34.Controls.Add(this.lblGeneralInfo);
-            this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel34.Location = new System.Drawing.Point(0, 0);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(309, 50);
-            this.panel34.TabIndex = 4;
-            // 
-            // panel36
-            // 
-            this.panel36.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel36.Location = new System.Drawing.Point(0, 50);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(50, 109);
-            this.panel36.TabIndex = 6;
-            // 
-            // panel37
-            // 
-            this.panel37.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel37.Location = new System.Drawing.Point(0, 159);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(322, 50);
-            this.panel37.TabIndex = 5;
-            // 
-            // panel38
-            // 
-            this.panel38.Controls.Add(this.lblPosition);
-            this.panel38.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel38.Location = new System.Drawing.Point(0, 0);
-            this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(322, 50);
-            this.panel38.TabIndex = 4;
-            // 
-            // panel39
-            // 
-            this.panel39.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel39.Location = new System.Drawing.Point(322, 50);
-            this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(50, 227);
-            this.panel39.TabIndex = 7;
-            // 
-            // panel40
-            // 
-            this.panel40.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel40.Location = new System.Drawing.Point(0, 50);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(50, 227);
-            this.panel40.TabIndex = 6;
-            // 
-            // panel41
-            // 
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel41.Location = new System.Drawing.Point(0, 277);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(372, 50);
-            this.panel41.TabIndex = 5;
-            // 
-            // panel42
-            // 
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel42.Location = new System.Drawing.Point(0, 0);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(372, 50);
-            this.panel42.TabIndex = 4;
-            // 
-            // panel43
-            // 
-            this.panel43.Controls.Add(this.pbPlanet);
-            this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel43.Location = new System.Drawing.Point(50, 50);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(272, 227);
-            this.panel43.TabIndex = 8;
-            // 
-            // panel44
-            // 
-            this.panel44.Controls.Add(this.listBoxRoutes);
-            this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel44.Location = new System.Drawing.Point(50, 50);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(185, 227);
-            this.panel44.TabIndex = 9;
-            // 
-            // panel45
-            // 
-            this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel45.Controls.Add(this.lblFiliation);
-            this.panel45.Controls.Add(this.lblSpecie);
-            this.panel45.Controls.Add(this.lblPlanet);
-            this.panel45.Controls.Add(this.label4);
-            this.panel45.Controls.Add(this.label3);
-            this.panel45.Controls.Add(this.label2);
-            this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel45.Location = new System.Drawing.Point(50, 50);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(209, 109);
-            this.panel45.TabIndex = 9;
-            // 
-            // listBoxRoutes
-            // 
-            this.listBoxRoutes.BackColor = System.Drawing.Color.Black;
-            this.listBoxRoutes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxRoutes.FormattingEnabled = true;
-            this.listBoxRoutes.Location = new System.Drawing.Point(0, 0);
-            this.listBoxRoutes.Margin = new System.Windows.Forms.Padding(2);
-            this.listBoxRoutes.Name = "listBoxRoutes";
-            this.listBoxRoutes.Size = new System.Drawing.Size(185, 227);
-            this.listBoxRoutes.TabIndex = 1;
-            // 
-            // lblHyperSpace
-            // 
-            this.lblHyperSpace.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblHyperSpace.AutoSize = true;
-            this.lblHyperSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHyperSpace.ForeColor = System.Drawing.Color.White;
-            this.lblHyperSpace.Location = new System.Drawing.Point(46, 28);
-            this.lblHyperSpace.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHyperSpace.Name = "lblHyperSpace";
-            this.lblHyperSpace.Size = new System.Drawing.Size(153, 20);
-            this.lblHyperSpace.TabIndex = 27;
-            this.lblHyperSpace.Text = "HyperSpace Routes";
-            // 
-            // lblFiliation
-            // 
-            this.lblFiliation.AutoSize = true;
-            this.lblFiliation.ForeColor = System.Drawing.Color.White;
-            this.lblFiliation.Location = new System.Drawing.Point(150, 83);
-            this.lblFiliation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFiliation.Name = "lblFiliation";
-            this.lblFiliation.Size = new System.Drawing.Size(19, 13);
-            this.lblFiliation.TabIndex = 18;
-            this.lblFiliation.Text = "??";
-            // 
-            // lblSpecie
-            // 
-            this.lblSpecie.AutoSize = true;
-            this.lblSpecie.ForeColor = System.Drawing.Color.White;
-            this.lblSpecie.Location = new System.Drawing.Point(150, 46);
-            this.lblSpecie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSpecie.Name = "lblSpecie";
-            this.lblSpecie.Size = new System.Drawing.Size(19, 13);
-            this.lblSpecie.TabIndex = 17;
-            this.lblSpecie.Text = "??";
-            // 
-            // lblPlanet
-            // 
-            this.lblPlanet.AutoSize = true;
-            this.lblPlanet.ForeColor = System.Drawing.Color.White;
-            this.lblPlanet.Location = new System.Drawing.Point(150, 12);
-            this.lblPlanet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPlanet.Name = "lblPlanet";
-            this.lblPlanet.Size = new System.Drawing.Size(19, 13);
-            this.lblPlanet.TabIndex = 16;
-            this.lblPlanet.Text = "??";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(61, 83);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "FILIATION:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(61, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "SPECIE:";
+            // pnlTabPlanet
+            // 
+            this.pnlTabPlanet.Controls.Add(this.lblHyperSpace);
+            this.pnlTabPlanet.Controls.Add(this.panHyperSpace);
+            this.pnlTabPlanet.Controls.Add(this.lblPosition);
+            this.pnlTabPlanet.Controls.Add(this.panPosition);
+            this.pnlTabPlanet.Controls.Add(this.lblGeneralInfo);
+            this.pnlTabPlanet.Controls.Add(this.pbPlanet);
+            this.pnlTabPlanet.Controls.Add(this.panGeneralInfo);
+            this.pnlTabPlanet.Location = new System.Drawing.Point(2, 2);
+            this.pnlTabPlanet.Name = "pnlTabPlanet";
+            this.pnlTabPlanet.Size = new System.Drawing.Size(662, 541);
+            this.pnlTabPlanet.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(61, 12);
+            this.label2.Location = new System.Drawing.Point(9, 31);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 13;
+            this.label2.TabIndex = 7;
             this.label2.Text = "PLANET:";
             // 
-            // lblPosition
+            // label3
             // 
-            this.lblPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPosition.AutoSize = true;
-            this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.ForeColor = System.Drawing.Color.White;
-            this.lblPosition.Location = new System.Drawing.Point(46, 27);
-            this.lblPosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(65, 20);
-            this.lblPosition.TabIndex = 26;
-            this.lblPosition.Text = "Position";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(9, 65);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "SPECIE:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(9, 102);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "FILIATION:";
+            // 
+            // lblPlanet
+            // 
+            this.lblPlanet.AutoSize = true;
+            this.lblPlanet.ForeColor = System.Drawing.Color.White;
+            this.lblPlanet.Location = new System.Drawing.Point(98, 31);
+            this.lblPlanet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlanet.Name = "lblPlanet";
+            this.lblPlanet.Size = new System.Drawing.Size(19, 13);
+            this.lblPlanet.TabIndex = 10;
+            this.lblPlanet.Text = "??";
+            // 
+            // lblSpecie
+            // 
+            this.lblSpecie.AutoSize = true;
+            this.lblSpecie.ForeColor = System.Drawing.Color.White;
+            this.lblSpecie.Location = new System.Drawing.Point(98, 65);
+            this.lblSpecie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpecie.Name = "lblSpecie";
+            this.lblSpecie.Size = new System.Drawing.Size(19, 13);
+            this.lblSpecie.TabIndex = 11;
+            this.lblSpecie.Text = "??";
+            // 
+            // lblFiliation
+            // 
+            this.lblFiliation.AutoSize = true;
+            this.lblFiliation.ForeColor = System.Drawing.Color.White;
+            this.lblFiliation.Location = new System.Drawing.Point(98, 102);
+            this.lblFiliation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFiliation.Name = "lblFiliation";
+            this.lblFiliation.Size = new System.Drawing.Size(19, 13);
+            this.lblFiliation.TabIndex = 12;
+            this.lblFiliation.Text = "??";
+            // 
+            // panGeneralInfo
+            // 
+            this.panGeneralInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panGeneralInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panGeneralInfo.Controls.Add(this.lblFiliation);
+            this.panGeneralInfo.Controls.Add(this.lblSpecie);
+            this.panGeneralInfo.Controls.Add(this.lblPlanet);
+            this.panGeneralInfo.Controls.Add(this.label4);
+            this.panGeneralInfo.Controls.Add(this.label3);
+            this.panGeneralInfo.Controls.Add(this.label2);
+            this.panGeneralInfo.Location = new System.Drawing.Point(84, 9);
+            this.panGeneralInfo.Margin = new System.Windows.Forms.Padding(2);
+            this.panGeneralInfo.Name = "panGeneralInfo";
+            this.panGeneralInfo.Size = new System.Drawing.Size(202, 134);
+            this.panGeneralInfo.TabIndex = 22;
+            // 
+            // pbPlanet
+            // 
+            this.pbPlanet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbPlanet.Location = new System.Drawing.Point(147, 268);
+            this.pbPlanet.Margin = new System.Windows.Forms.Padding(2);
+            this.pbPlanet.Name = "pbPlanet";
+            this.pbPlanet.Size = new System.Drawing.Size(358, 255);
+            this.pbPlanet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPlanet.TabIndex = 23;
+            this.pbPlanet.TabStop = false;
             // 
             // lblGeneralInfo
             // 
             this.lblGeneralInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGeneralInfo.AutoSize = true;
-            this.lblGeneralInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGeneralInfo.ForeColor = System.Drawing.Color.White;
-            this.lblGeneralInfo.Location = new System.Drawing.Point(47, 27);
+            this.lblGeneralInfo.Location = new System.Drawing.Point(106, 2);
             this.lblGeneralInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGeneralInfo.Name = "lblGeneralInfo";
-            this.lblGeneralInfo.Size = new System.Drawing.Size(98, 20);
-            this.lblGeneralInfo.TabIndex = 25;
+            this.lblGeneralInfo.Size = new System.Drawing.Size(65, 13);
+            this.lblGeneralInfo.TabIndex = 21;
             this.lblGeneralInfo.Text = "General Info";
-            // 
-            // pbPlanet
-            // 
-            this.pbPlanet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbPlanet.Location = new System.Drawing.Point(0, 0);
-            this.pbPlanet.Margin = new System.Windows.Forms.Padding(2);
-            this.pbPlanet.Name = "pbPlanet";
-            this.pbPlanet.Size = new System.Drawing.Size(272, 227);
-            this.pbPlanet.TabIndex = 24;
-            this.pbPlanet.TabStop = false;
-            // 
-            // panel35
-            // 
-            this.panel35.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel35.Location = new System.Drawing.Point(272, 50);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(50, 109);
-            this.panel35.TabIndex = 7;
-            // 
-            // panel46
-            // 
-            this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel46.Controls.Add(this.lblSector);
-            this.panel46.Controls.Add(this.lblParsecs);
-            this.panel46.Controls.Add(this.lblLat);
-            this.panel46.Controls.Add(this.lblLong);
-            this.panel46.Controls.Add(this.label8);
-            this.panel46.Controls.Add(this.label7);
-            this.panel46.Controls.Add(this.label6);
-            this.panel46.Controls.Add(this.label5);
-            this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel46.Location = new System.Drawing.Point(50, 50);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(222, 109);
-            this.panel46.TabIndex = 10;
-            // 
-            // lblSector
-            // 
-            this.lblSector.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSector.AutoSize = true;
-            this.lblSector.ForeColor = System.Drawing.Color.White;
-            this.lblSector.Location = new System.Drawing.Point(158, 88);
-            this.lblSector.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSector.Name = "lblSector";
-            this.lblSector.Size = new System.Drawing.Size(19, 13);
-            this.lblSector.TabIndex = 27;
-            this.lblSector.Text = "??";
-            // 
-            // lblParsecs
-            // 
-            this.lblParsecs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblParsecs.AutoSize = true;
-            this.lblParsecs.ForeColor = System.Drawing.Color.White;
-            this.lblParsecs.Location = new System.Drawing.Point(158, 59);
-            this.lblParsecs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblParsecs.Name = "lblParsecs";
-            this.lblParsecs.Size = new System.Drawing.Size(19, 13);
-            this.lblParsecs.TabIndex = 26;
-            this.lblParsecs.Text = "??";
-            // 
-            // lblLat
-            // 
-            this.lblLat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLat.AutoSize = true;
-            this.lblLat.ForeColor = System.Drawing.Color.White;
-            this.lblLat.Location = new System.Drawing.Point(158, 30);
-            this.lblLat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLat.Name = "lblLat";
-            this.lblLat.Size = new System.Drawing.Size(19, 13);
-            this.lblLat.TabIndex = 25;
-            this.lblLat.Text = "??";
-            // 
-            // lblLong
-            // 
-            this.lblLong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLong.AutoSize = true;
-            this.lblLong.ForeColor = System.Drawing.Color.White;
-            this.lblLong.Location = new System.Drawing.Point(158, 4);
-            this.lblLong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLong.Name = "lblLong";
-            this.lblLong.Size = new System.Drawing.Size(19, 13);
-            this.lblLong.TabIndex = 20;
-            this.lblLong.Text = "??";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(45, 88);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 13);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "SECTOR:";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(45, 59);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "PARSECS:";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(45, 30);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "LATITUDE:";
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(45, 4);
+            this.label5.Location = new System.Drawing.Point(72, 18);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 13);
             this.label5.TabIndex = 21;
             this.label5.Text = "LONGITUDE:";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(72, 44);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "LATITUDE:";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(72, 73);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "PARSECS:";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(72, 102);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "SECTOR:";
+            // 
+            // lblLong
+            // 
+            this.lblLong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLong.AutoSize = true;
+            this.lblLong.ForeColor = System.Drawing.Color.White;
+            this.lblLong.Location = new System.Drawing.Point(185, 18);
+            this.lblLong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLong.Name = "lblLong";
+            this.lblLong.Size = new System.Drawing.Size(19, 13);
+            this.lblLong.TabIndex = 20;
+            this.lblLong.Text = "??";
+            // 
+            // lblLat
+            // 
+            this.lblLat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLat.AutoSize = true;
+            this.lblLat.ForeColor = System.Drawing.Color.White;
+            this.lblLat.Location = new System.Drawing.Point(185, 44);
+            this.lblLat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLat.Name = "lblLat";
+            this.lblLat.Size = new System.Drawing.Size(19, 13);
+            this.lblLat.TabIndex = 25;
+            this.lblLat.Text = "??";
+            // 
+            // lblParsecs
+            // 
+            this.lblParsecs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblParsecs.AutoSize = true;
+            this.lblParsecs.ForeColor = System.Drawing.Color.White;
+            this.lblParsecs.Location = new System.Drawing.Point(185, 73);
+            this.lblParsecs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblParsecs.Name = "lblParsecs";
+            this.lblParsecs.Size = new System.Drawing.Size(19, 13);
+            this.lblParsecs.TabIndex = 26;
+            this.lblParsecs.Text = "??";
+            // 
+            // lblSector
+            // 
+            this.lblSector.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSector.AutoSize = true;
+            this.lblSector.ForeColor = System.Drawing.Color.White;
+            this.lblSector.Location = new System.Drawing.Point(185, 102);
+            this.lblSector.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSector.Name = "lblSector";
+            this.lblSector.Size = new System.Drawing.Size(19, 13);
+            this.lblSector.TabIndex = 27;
+            this.lblSector.Text = "??";
+            // 
+            // panPosition
+            // 
+            this.panPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panPosition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panPosition.Controls.Add(this.lblSector);
+            this.panPosition.Controls.Add(this.lblParsecs);
+            this.panPosition.Controls.Add(this.lblLat);
+            this.panPosition.Controls.Add(this.lblLong);
+            this.panPosition.Controls.Add(this.label8);
+            this.panPosition.Controls.Add(this.label7);
+            this.panPosition.Controls.Add(this.label6);
+            this.panPosition.Controls.Add(this.label5);
+            this.panPosition.Location = new System.Drawing.Point(300, 9);
+            this.panPosition.Margin = new System.Windows.Forms.Padding(2);
+            this.panPosition.Name = "panPosition";
+            this.panPosition.Size = new System.Drawing.Size(279, 134);
+            this.panPosition.TabIndex = 25;
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.ForeColor = System.Drawing.Color.White;
+            this.lblPosition.Location = new System.Drawing.Point(322, 2);
+            this.lblPosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(44, 13);
+            this.lblPosition.TabIndex = 24;
+            this.lblPosition.Text = "Position";
+            // 
+            // listBoxRoutes
+            // 
+            this.listBoxRoutes.BackColor = System.Drawing.Color.Black;
+            this.listBoxRoutes.FormattingEnabled = true;
+            this.listBoxRoutes.Location = new System.Drawing.Point(24, 12);
+            this.listBoxRoutes.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxRoutes.Name = "listBoxRoutes";
+            this.listBoxRoutes.Size = new System.Drawing.Size(439, 56);
+            this.listBoxRoutes.TabIndex = 0;
+            // 
+            // panHyperSpace
+            // 
+            this.panHyperSpace.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panHyperSpace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panHyperSpace.Controls.Add(this.listBoxRoutes);
+            this.panHyperSpace.Location = new System.Drawing.Point(84, 162);
+            this.panHyperSpace.Margin = new System.Windows.Forms.Padding(2);
+            this.panHyperSpace.Name = "panHyperSpace";
+            this.panHyperSpace.Size = new System.Drawing.Size(495, 85);
+            this.panHyperSpace.TabIndex = 27;
+            // 
+            // lblHyperSpace
+            // 
+            this.lblHyperSpace.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHyperSpace.AutoSize = true;
+            this.lblHyperSpace.ForeColor = System.Drawing.Color.White;
+            this.lblHyperSpace.Location = new System.Drawing.Point(106, 155);
+            this.lblHyperSpace.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHyperSpace.Name = "lblHyperSpace";
+            this.lblHyperSpace.Size = new System.Drawing.Size(103, 13);
+            this.lblHyperSpace.TabIndex = 26;
+            this.lblHyperSpace.Text = "HyperSpace Routes";
             // 
             // frmMain
             // 
@@ -1382,24 +1131,14 @@ namespace OnBoardComputer
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel23.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.panel27.ResumeLayout(false);
-            this.panel27.PerformLayout();
-            this.panel34.ResumeLayout(false);
-            this.panel34.PerformLayout();
-            this.panel38.ResumeLayout(false);
-            this.panel38.PerformLayout();
-            this.panel43.ResumeLayout(false);
-            this.panel44.ResumeLayout(false);
-            this.panel45.ResumeLayout(false);
-            this.panel45.PerformLayout();
+            this.pnlTabPlanet.ResumeLayout(false);
+            this.pnlTabPlanet.PerformLayout();
+            this.panGeneralInfo.ResumeLayout(false);
+            this.panGeneralInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlanet)).EndInit();
-            this.panel46.ResumeLayout(false);
-            this.panel46.PerformLayout();
+            this.panPosition.ResumeLayout(false);
+            this.panPosition.PerformLayout();
+            this.panHyperSpace.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1462,44 +1201,12 @@ namespace OnBoardComputer
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pbHyperSpace;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.Panel panel39;
-        private System.Windows.Forms.Panel panel40;
-        private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.Panel panel42;
-        private System.Windows.Forms.Panel panel36;
-        private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.Panel panel38;
-        private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.Panel panel45;
-        private System.Windows.Forms.ListBox listBoxRoutes;
+        private System.Windows.Forms.Panel pnlTabPlanet;
         private System.Windows.Forms.Label lblHyperSpace;
-        private System.Windows.Forms.Label lblFiliation;
-        private System.Windows.Forms.Label lblSpecie;
-        private System.Windows.Forms.Label lblPlanet;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panHyperSpace;
+        private System.Windows.Forms.ListBox listBoxRoutes;
         private System.Windows.Forms.Label lblPosition;
-        private System.Windows.Forms.Label lblGeneralInfo;
-        private System.Windows.Forms.PictureBox pbPlanet;
-        private System.Windows.Forms.Panel panel46;
+        private System.Windows.Forms.Panel panPosition;
         private System.Windows.Forms.Label lblSector;
         private System.Windows.Forms.Label lblParsecs;
         private System.Windows.Forms.Label lblLat;
@@ -1508,7 +1215,15 @@ namespace OnBoardComputer
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.Label lblGeneralInfo;
+        private System.Windows.Forms.PictureBox pbPlanet;
+        private System.Windows.Forms.Panel panGeneralInfo;
+        private System.Windows.Forms.Label lblFiliation;
+        private System.Windows.Forms.Label lblSpecie;
+        private System.Windows.Forms.Label lblPlanet;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 

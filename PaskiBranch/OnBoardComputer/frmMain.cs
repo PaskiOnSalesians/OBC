@@ -127,7 +127,22 @@ namespace OnBoardComputer
             lblParsecs.Text = planet.Situation.Parsecs;
             lblSector.Text = planet.Sector;
 
-            pbPlanet.ImageLocation = Application.StartupPath +  "\\..\\Resources\\Planetes\\" + planet.Nombre + ".png";
+            if(planet.Nombre == "Rakata Prime")
+            {
+                pbPlanet.ImageLocation = Application.StartupPath + "\\..\\Resources\\Planetes\\Rakata_Prime.png";
+            } 
+            else if(planet.Nombre == "D'Qar")
+            {
+                pbPlanet.ImageLocation = Application.StartupPath + "\\..\\Resources\\Planetes\\DQar.png";
+            }
+            else
+            {
+                pbPlanet.ImageLocation = Application.StartupPath + "\\..\\Resources\\Planetes\\" + planet.Nombre + ".png";
+            }
+
+            pbPlanet.Size = new Size(350, 350);
+
+
 
             listBoxRoutes.Items.Clear();
             foreach (string item in planet.HyperSpaceRoute.Route)
@@ -151,7 +166,7 @@ namespace OnBoardComputer
             lblRegionName.Text = region.NameRegion;
             lblRegionDesc.Text = region.DescriptionRegion;
 
-            pbRegion.ImageLocation = Application.StartupPath + "\\..\\Resources\\Regions\\" + region.MapRegion + ".jpg";
+            pbRegion.ImageLocation = Application.StartupPath + "\\..\\Resources\\Regions\\" + region.MapRegion;
         }
 
         private void LoadFiliations()
