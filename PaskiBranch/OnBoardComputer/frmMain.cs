@@ -140,10 +140,6 @@ namespace OnBoardComputer
                 pbPlanet.ImageLocation = Application.StartupPath + "\\..\\Resources\\Planetes\\" + planet.Nombre + ".png";
             }
 
-            pbPlanet.Size = new Size(350, 350);
-
-
-
             listBoxRoutes.Items.Clear();
             foreach (string item in planet.HyperSpaceRoute.Route)
             {
@@ -200,6 +196,8 @@ namespace OnBoardComputer
             lblRouteName.Text = hyperSpaceRoute.NameRoute;
             lblStart.Text = hyperSpaceRoute.Start;
             lblEnd.Text = hyperSpaceRoute.End;
+
+            pbHyperSpace.ImageLocation = Application.StartupPath + "\\..\\Resources\\Routes\\" + hyperSpaceRoute.NameRoute + ".jpg";
         }
 
         private void treeViewData_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -250,7 +248,7 @@ namespace OnBoardComputer
                     panel16.Visible = true;
                     label11.Visible = true;
 
-                    pbFiliation.Visible = true;
+                    //pbFiliation.Visible = true;
 
                     foreach (var item in filiations)
                     {
